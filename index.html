@@ -7,21 +7,59 @@
     <title>Document</title>
 </head>
 <body>
-    <article>
-        <!-- Główny tytuł -->
-        <header>
-            <h1>Główny tytuł</h1>
-        </header>
-        <!-- Paragraf_1 -->
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, est? Unde voluptates tenetur dolorum, quae consectetur officia voluptas expedita earum ratione rem commodi architecto? Unde veritatis eveniet adipisci ullam odio?</p>
-        <!-- Podtytuł_1 -->
-        <h2>Podtytuł</h2>
-        <!-- Paragraf_2 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo neque aliquid quo eos hic, nemo, temporibus expedita delectus repellendus id ex corporis voluptatibus rem suscipit sequi perferendis! Amet, deserunt.</p>
-        <!-- Podtytuł_2 -->
-        <h2>Podtytuł</h2>
-        <!-- Obrazek -->
-        <img src="img/qt twitch.PNG" alt="Szczurek">
-    </article>
+    <nav class="main-navigation">
+        <ul class="menu-list">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam neque quia possimus maxime itaque magni nihil vero voluptatibus, illo quam ducimus eos nesciunt minus consequatur? Praesentium cum adipisci aspernatur ad.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>First skill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id, doloremque aspernatur minus accusantium perferendis est provident ipsa placeat! Ab quaerat praesentium, recusandae assumenda nam tempore dicta quam totam doloremque.</p>
+        </div>
+        <div class="skill">
+            <h3>Second skill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit similique hic nobis placeat sapiente quod tempore aliquid assumenda numquam perspiciatis accusantium, doloribus quaerat excepturi, animi distinctio nihil dicta eligendi?</p>
+        </div>
+        <div class="skill">
+            <h3>Third skill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis error officia praesentium ad adipisci nesciunt aperiam, nobis minima, explicabo ipsum sint totam minus nihil corporis debitis, cupiditate molestiae deleniti.</p>
+        </div>
+        <div class="skill">
+            <h3>Fourth skill</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi cupiditate, consequatur tempora iste libero odio accusamus sapiente eveniet eos, numquam esse similique eius! Aut inventore veniam rem illum nobis.</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item"><img src="img/Chicken Joe.jpg" alt="kurczak" style="width: 300px;border-radius: 150px;"></div>
+        <div class="portfolio-item"><img src="img/qt twitch.PNG" alt="szczurek" style="width: 300px;border-radius: 200px;"></div>
+        <div class="portfolio-item"><img src="img/Spanish duolingo.PNG" alt="sowa" style="width: 300px;border-radius: 150px;"></div>
+    </section>
+    <section id="contact">
+        <h2>Marcin Kuczma</h2>
+        <address>
+            Warszawa, ul. test 123 12-345 <br>
+            Polska
+        </address>
+        <br>
+        <form>
+            <label for="imie">Imię</label><br>
+            <input type="text" id="imie" name="imie" required><br>
+            <label for="temat">Temat</label><br>
+            <input type="text" id="temat" name="temat" required><br>
+            <label for="wiadomosc">Wiadomość</label><br>
+            <input type="text" id="wiadomosc" name="wiadomosc" required><br><br>
+            <input type="button" value="wyślij">
+        </form>
+    </section>
 </body>
 </html>
